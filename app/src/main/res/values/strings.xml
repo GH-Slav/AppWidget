@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AppWidget</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="update_widget_text">Обновить</string>
+    <string-array name="cities_array">
+        <item>Минск</item>
+        <item>Москва</item>
+        <item>Астана</item>
+        <item>Амстердам</item>
+        <item>Милан</item>
+        <item>Норильск</item>
+        <item>Калининград</item>
+    </string-array>
+</resources>

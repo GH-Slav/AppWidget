@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/widget_margin"
+    android:layout_margin="5dp"
+    android:background="@drawable/shape_widget_text">
+
+    <TextView
+        android:id="@+id/autoCompleteEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/appwidget_text"
+        tools:text="@string/appwidget_text"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        tools:text="+40 C"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/weatherStateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperatureTextView"
+        android:layout_alignStart="@+id/temperatureTextView"
+        tools:text="Облачность"/>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/update_widget_text"
+        android:textSize="12sp"
+        android:layout_toStartOf="@+id/autoCompleteEditText"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/widgetProgressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toStartOf="@+id/updateButton"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="32dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+
+</RelativeLayout>
